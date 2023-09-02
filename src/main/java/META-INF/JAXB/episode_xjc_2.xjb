@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2023.09.02 a las 05:24:09 PM PET 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.cibertec.edu.pe/ws/objects">
+    <schemaBindings map="false">
+      <package name="pe.edu.cibertec.ws.objects"/>
+    </schemaBindings>
+    <bindings scd="tns:getDomiciliosRequest">
+      <class ref="pe.edu.cibertec.ws.objects.GetDomiciliosRequest"/>
+    </bindings>
+    <bindings scd="tns:getDomiciliosResponse">
+      <class ref="pe.edu.cibertec.ws.objects.GetDomiciliosResponse"/>
+    </bindings>
+    <bindings scd="~tns:domiciliows">
+      <class ref="pe.edu.cibertec.ws.objects.Domiciliows"/>
+    </bindings>
+    <bindings scd="tns:getDomicilioRequest">
+      <class ref="pe.edu.cibertec.ws.objects.GetDomicilioRequest"/>
+    </bindings>
+    <bindings scd="tns:getDomicilioResponse">
+      <class ref="pe.edu.cibertec.ws.objects.GetDomicilioResponse"/>
+    </bindings>
+    <bindings scd="tns:postDomicilioRequest">
+      <class ref="pe.edu.cibertec.ws.objects.PostDomicilioRequest"/>
+    </bindings>
+    <bindings scd="tns:postDomicilioResponse">
+      <class ref="pe.edu.cibertec.ws.objects.PostDomicilioResponse"/>
+    </bindings>
+  </bindings>
+</bindings>
+

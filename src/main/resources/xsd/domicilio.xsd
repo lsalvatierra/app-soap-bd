@@ -1,0 +1,61 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://www.cibertec.edu.pe/ws/objects"
+           targetNamespace="http://www.cibertec.edu.pe/ws/objects"
+           elementFormDefault="qualified">
+    <!-- Find All -->
+    <xs:element name="getDomiciliosRequest">
+        <xs:complexType>
+            <xs:sequence>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getDomiciliosResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="domicilios" type="tns:domiciliows" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!-- Find by Id -->
+    <xs:element name="getDomicilioRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getDomicilioResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="domicilio" type="tns:domiciliows"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!-- Save -->
+    <xs:element name="postDomicilioRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="domicilio" type="tns:domiciliows"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="postDomicilioResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="domicilio" type="tns:domiciliows"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="domiciliows">
+        <xs:sequence>
+            <xs:element name="iddomicilio" type="xs:int"/>
+            <xs:element name="descdomicilio" type="xs:string"/>
+            <xs:element name="nrodomicilio" type="xs:int"/>
+            <xs:element name="refdomicilio" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+</xs:schema>
