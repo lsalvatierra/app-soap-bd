@@ -28,7 +28,7 @@ public class WebServiceConfig extends WsConfigurerAdapter {
     public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema countriesSchema) {
         DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
         wsdl11Definition.setPortTypeName("CountriesPort");
-        wsdl11Definition.setLocationUri("/ws");
+        wsdl11Definition.setLocationUri("/ws/contries");
         wsdl11Definition.setTargetNamespace("http://www.cibertec.edu.pe/ws/objects");
         wsdl11Definition.setSchema(countriesSchema);
         return wsdl11Definition;
@@ -43,7 +43,7 @@ public class WebServiceConfig extends WsConfigurerAdapter {
     public DefaultWsdl11Definition domicilioWsdl11Definition(XsdSchema domicilioSchema) {
         DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
         wsdl11Definition.setPortTypeName("DomiciliosPort");
-        wsdl11Definition.setLocationUri("/ws");
+        wsdl11Definition.setLocationUri("/ws/domicilios");
         wsdl11Definition.setTargetNamespace("http://www.cibertec.edu.pe/ws/objects");
         wsdl11Definition.setSchema(domicilioSchema);
         return wsdl11Definition;
